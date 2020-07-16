@@ -10,7 +10,9 @@
 </p>
 {% endif %}
 
+<!-- here we're passing question.id to our 'vote' view method -->
 <form action="{% url 'polls:vote' question.id %}" method="post">
+  <!-- security feature included with Django -->
   {% csrf_token %} {% for choice in question.choice_set.all %}
   <div class="form-check">
     <input

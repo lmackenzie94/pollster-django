@@ -8,6 +8,7 @@
     <span class="badge badge-success float-right"
       >{{ choice.votes }} vote{{ choice.votes | pluralize }}</span
     >
+    <!-- pluralize is a helper to add an 's' to 'vote' if there's more than 1 -->
   </li>
   {% endfor %}
 </ul>

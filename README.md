@@ -65,3 +65,5 @@ python manage.py createsuperuser
 ```python
 'DIRS': [os.path.join(BASE_DIR, 'templates')],
 ```
+
+- the directories within 'pollster' are our 'apps' (polls, pages)
