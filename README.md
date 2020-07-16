@@ -58,3 +58,10 @@ python manage.py createsuperuser
   - password is password
 
 - Register models in polls > admin.py
+
+### Using a global templates file (instead of app specific):
+- add the below to 'settings.py' file
+
+```python
+'DIRS': [os.path.join(BASE_DIR, 'templates')],
+```
