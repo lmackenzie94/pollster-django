@@ -74,3 +74,8 @@ python manage.py createsuperuser
 - pip freeze > requirements.txt 
 - heroku create [app-name]
 - add 'STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')' to 'settings.py'
+- create a 'Procfile' with 'web: gunicorn pollster.wsgi'
+  - 'web' = process type (will receive web traffic)
+  - 'gunicorn' = command needed to run our web process
+  - 'wsgi' = Web Service Gateway Interface
+  - 'pollster' = name of directory that holds 'settings.py'
