@@ -67,3 +67,8 @@ python manage.py createsuperuser
 ```
 
 - the directories within 'pollster' are our 'apps' (polls, pages)
+
+### To deploy
+
+- pip install gunicorn
+- pip freeze > requirements.txt 
