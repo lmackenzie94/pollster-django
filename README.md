@@ -68,7 +68,9 @@ python manage.py createsuperuser
 
 - the directories within 'pollster' are our 'apps' (polls, pages)
 
-### To deploy
+### To deploy (Heroku)
 
 - pip install gunicorn
 - pip freeze > requirements.txt 
+- heroku create [app-name]
+- add 'STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')' to 'settings.py'
