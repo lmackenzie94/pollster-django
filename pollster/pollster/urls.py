@@ -21,3 +21,14 @@ urlpatterns = [
     path('polls/', include('polls.urls')),
     path('admin/', admin.site.urls),
 ]
+
+"""
+HOW path() WORKS:
+- args (route, view, kwargs, name)
+
+ROUTE: a string that contains a URL pattern.
+VIEW: when Django finds a matching pattern, it calls the specified view function with an HttpRequest object as the first argument and any “captured” values from the route as keyword arguments. 
+KWARGS: arbitrary keyword arguments can be passed in a dictionary to the target view.
+NAME: naming your URL lets you refer to it unambiguously from elsewhere in Django, especially from within templates.
+
+"""

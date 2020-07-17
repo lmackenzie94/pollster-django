@@ -15,7 +15,10 @@ class Question(models.Model):
 
 
 class Choice(models.Model):
-    # link choice to the Question
+    # a relationship is defined, using ForeignKey. 
+    # That tells Django each Choice is related to a single Question. 
+    # Django supports all the common database relationships: many-to-one, many-to-many, and one-to-one.
+
     # CASCADE says if Question is deleted, delete all the Choices
     question = models.ForeignKey(Question, on_delete=models.CASCADE)
     choice_text = models.CharField(max_length=200)
